@@ -24,17 +24,6 @@
 
 现在花时间最多的地方是 **AI Agent 工具链**：怎么把文件系统、数据库、脚本工具挂到 Agent 上，让它真的能干活而不只是聊天。这个仓库列表里几个项目都是这条线上长出来的。
 
-<div align="center">
-
-<a href="https://github.com/Asuna486-desuwa">
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=Asuna486-desuwa&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=default&title_color=2b7fff&icon_color=2b7fff&hide=issues" alt="GitHub 统计" />
-</a>
-<a href="https://github.com/Asuna486-desuwa">
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Asuna486-desuwa&layout=compact&hide_border=true&langs_count=8&theme=default&title_color=2b7fff" alt="语言分布" />
-</a>
-
-</div>
-
 ---
 
 ## 技术栈
