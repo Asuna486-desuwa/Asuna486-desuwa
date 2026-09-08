@@ -69,15 +69,17 @@
 | **[wecom-claude-relay](https://github.com/Asuna486-desuwa/wecom-claude-relay)** | 企业微信长连接机器人接 AI Agent，在微信里读文件、跑命令，带路径白名单 | Node.js · WebSocket |
 | **[creo-fasteners](https://github.com/Asuna486-desuwa/creo-fasteners)** | 七种 GB 标准紧固件自动建模：CadQuery 出 STEP，另配 Creo Trail 与 Mapkey 两套方案 | Python · CadQuery |
 | **[decision-helper](https://github.com/Asuna486-desuwa/decision-helper)** | 治选择困难症的微信小程序，老虎机式随机抽选，零后端 | 微信小程序 |
+| **[yolov8-metal-defect-detection](https://github.com/Asuna486-desuwa/yolov8-metal-defect-detection)** | 冷轧钢板 10 类表面缺陷检测，t-SNE 特征降维定位类别混淆 | Python · PyTorch |
+| **[docx-cn](https://github.com/Asuna486-desuwa/docx-cn)** | 写中文报告的 python-docx 薄封装：字体绑定 `w:eastAsia`、往已有文档指定位置插图 | Python |
 | **[toolbox](https://github.com/Asuna486-desuwa/toolbox)** | 自用 Python 小工具：B 站 WBI 签名爬虫、文字流配音出片、简历 PDF 排版 | Python |
 
 ---
 
 ## 做过的事
 
-**基于 YOLOv8 的工件表面缺陷检测系统** · 独立完成
+**[基于 YOLOv8 的金属表面缺陷检测](https://github.com/Asuna486-desuwa/yolov8-metal-defect-detection)** · 独立完成
 
-打通数据采集、标注、训练到部署的完整链路，识别划痕、凹坑、裂纹、锈蚀等 10 类缺陷。自采标注 3000 余张样本，针对小样本与类别不均衡用 Mosaic 与仿射变换做增强，PyTorch 本地 GPU 训练调优后 mAP@0.5 达 92%。
+在公开数据集 GC10-DET 上训练 YOLOv8s，检测冷轧钢板 10 类表面缺陷，测试集 mAP@0.5 0.656，其中冲孔、月牙弯、焊缝三类 AP 超过 0.94。数据集长尾严重（折痕仅 7 个实例），除常规指标外还用 t-SNE 把检测头前一层特征降到二维，定位出模型具体把哪几类混在了一起。代码、指标、结论都在仓库里，可复现。
 
 **污水管道检测机器人整机建模** · 团队 4 人，负责建模装配
 
